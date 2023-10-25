@@ -6,9 +6,9 @@ from airium import Airium
 page = Airium()
 page('<!DOCTYPE html>')
 
-for file in os.listdir("./"):
+for file in os.listdir("./json_files/"):
     if file.endswith(".json"):
-        f = open(file)
+        f = open("./json_files/" + file)
         data = json.load(f)
         print(data["titulo"])
         with page.html():
@@ -23,7 +23,7 @@ for file in os.listdir("./"):
             with page.p(style="font-size: 14px; font-family:Abadi;", align="center"):
                 page("<br><br>Autor: " + data["autor"])
         html = str(page)
-        html_file = open(file.replace(".json", ".html"), "w")
+        html_file = open("./html_files/" + file.replace(".json", ".html"), "w")
         html_file.write(html)
         page = Airium()
         page('<!DOCTYPE html>')
