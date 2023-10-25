@@ -23,7 +23,7 @@ for file in os.listdir("./json_files/"):
             with page.p(style="font-size: 14px; font-family:Abadi;", align="center"):
                 page("<br><br>Autor: " + data["autor"])
         html = str(page)
-        html_file = open("./html_files/" + file.replace(".json", ".html"), "w")
+        html_file = open("./docs/" + file.replace(".json", ".html"), "w")
         html_file.write(html)
         page = Airium()
         page('<!DOCTYPE html>')
