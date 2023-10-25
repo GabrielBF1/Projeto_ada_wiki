@@ -1,0 +1,5 @@
+{
+    "titulo":"Como criar uma branch",
+    "descricao":"Siga os passos abaixo:<br> 1. Acesse o Github <br>2. No GitHub.com, navegue até a página principal do repositório.<br>3. Na exibição da árvore de arquivos à esquerda, selecione o menu suspenso do branch  e clique em Exibir todos os branches. Você também pode encontrar o menu suspenso do branch na parte superior do editor de arquivos integrado<br>4. Clique em Novo branch<br> 5. Em \"Nome do branch\", digite um nome para o branch.<br>6. Em \"Origem do branch\", escolha uma origem para o branch.<br>7. Clique em Criar branch ",
+    "autor":"Gabriel Barleta"
+}
